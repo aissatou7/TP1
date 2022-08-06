@@ -1,0 +1,39 @@
+header img {
+
+    width: 100%;
+
+}
+.texte{
+    width: 100%;
+    font-size: 20px;
+    margin-right: 200px;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.division{
+    width: 48%;
+    height: 20%;
+    background-color: brown;
+    border: 10px solid red;
+    /* mettre le texte thi digui bi */
+    /* NB : les deux propriétés suivantes n'y fonctionnent pas justify-content: center;
+    justify-items: center;   */
+        writing-mode : vertical-lr;
+    }
+
+
+
+p {
+    font-size: 20px;
+    text-align: center;
+    margin-left: 300px;
+   }
+
