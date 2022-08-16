@@ -22,18 +22,26 @@ header img {
     width: 48%;
     height: 20%;
     background-color: brown;
-    border: 10px solid red;
+    border-radius: 10px;
+    margin: 10px;
     /* mettre le texte thi digui bi */
     /* NB : les deux propriétés suivantes n'y fonctionnent pas justify-content: center;
     justify-items: center;   */
-        writing-mode : vertical-lr;
+    writing-mode : vertical-lr;
     }
 
 
 
 p {
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     margin-left: 300px;
    }
-
+button{
+    width: 100px;
+    height: 60px;
+    background-color: brown;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
