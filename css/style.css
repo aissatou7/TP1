@@ -1,18 +1,22 @@
+html{
+    min-width : 836px;
+}
 header img {
 
     width: 100%;
+    height :250px;
 
 }
 .texte{
     width: 100%;
-    font-size: 20px;
-    margin-right: 200px;
+    font-size: 150%;
+   text-align: center;
 }
 
 #content {
     width: 100%;
     height: 100%;
-    background-color: red;
+    background-color: rgb(238, 96, 96);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,16 +36,94 @@ header img {
 
 
 
-p {
-    font-size: 30px;
+.division p {
+    font-size: 200%;
     text-align: center;
-    margin-left: 300px;
+    margin-left: 200%;
    }
-button{
-    width: 100px;
+.bouton1{
+    width: 10%;
     height: 60px;
     background-color: brown;
-    font-size: 20px;
+    font-size: 150%;
     border-radius: 20px;
-    margin-top: 40px;
+    margin-top: 3%;
 }
+span{
+    font-size : 15px;
+}
+@media screen and (max-width:1029px){
+    #content {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .division{
+        width: 80%;
+        height: 20%;
+        margin: 10px 100px;    
+        }
+    .p_bloc{
+        /* font-size: 200%; */
+        text-align: center;
+        writing-mode :horizontal-tb;
+        margin-left: 200px;
+       }
+    .bouton1{
+        width: 20%;
+        height: 60px;
+        font-size: 150%;
+        margin-top: 3%;
+    }
+}
+@media screen and (max-width:763px){
+    .p_bloc{
+        /* font-size: 200%; */
+        text-align: center;
+        writing-mode :horizontal-tb;
+       }
+}
+    /* 1 formulaire */
+
+#content_autre{
+    display: flex;
+    width: 70%;
+}
+.div_form {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    margin: 2% 0%;
+    font-size: 30px;
+    background-color: rgb(238, 96, 96);
+    border-radius: 10px;
+}
+
+
+input {
+    font-size: 20px;
+}
+
+.bouton2 {
+    width: 32%;
+    height: 60px;
+    background-color: brown;
+    font-size: 100%;
+    border-radius: 20px;
+    margin: 10% 30%;
+    border: 3px solid black;
+}
+#prenom_manquant{
+    font-size: 15px;
+}
+#nom_manquant{
+    font-size: 15px;
+}
+#tel_manquant{
+    font-size: 15px;
+}
+#email_manquant{
+    font-size: 15px;
+}
+

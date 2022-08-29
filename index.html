@@ -25,33 +25,100 @@
             Mon premier Tp : Mame Aicha Fall
         </p>
         <div class="division">
-            <p> <b>Bloc1</b> </p>
+            <p class="p_bloc"> <b>Bloc1</b> </p>
         </div>
         <div class="division">
-            <p> <b>Bloc2</b></p>
+            <p class="p_bloc"> <b>Bloc2</b></p>
         </div>
 
         <div class="division">
-            <p> <b>Bloc3</b></p>
+            <p class="p_bloc"> <b>Bloc3</b></p>
         </div>
         <div class="division">
-            <p> <b>Bloc4</b></p>
+            <p class="p_bloc"> <b>Bloc4</b></p>
         </div>
-        <button id="bouton" onclick="change()">Bouton</button>
+        <button class="bouton1" onclick="change()">Bouton</button>
     </div>
-  
-
+    <div id="content_autre">
+        <div class="div_form">
+            <form method="POST" id="formulaire_contact" >
+                <fieldset form="formulaire_contact">
+                    <legend>FORMULAIRE DE CONTACT</legend><br>
+                    <label for="prenom" id="prenom">Prénom * :</label><br>
+                    <input type="text"  id="champ_prenom" required pattern="^[a-zA-ZéèêîÏÊ][a-zA-ZéèêîÏÊ]+([a-zA-ZéèêîÏÊ][a-zA-ZéèêîÏÊ-\s])?" maxlength="20">      <span id="prenom_manquant"></span><br>
+    
+                    <label for="nom">Nom * :</label><br>
+                    <input type="text"  id="champ_nom" required pattern="^[a-zA-ZéèêîÏÊ][a-zA-ZéèêîÏÊ]+([a-zA-ZéèêîÏÊ][a-zA-ZéèêîÏÊ-\s])?" maxlength="20">      <span id="nom_manquant"></span><br>
+    
+                    <label for="telephone">Telephone * :</label><br>
+                    <input type="text" id="champ_tel" required pattern="^[[+]+[0-9]]+[0-9]?" maxlength="20">      <span id="tel_manquant"></span><br>
+    
+                    <label for="email"> E-mail * :</label><br>
+                    <input type="text" id="champ_email" required pattern="^[a-zA-ZéèêîÏÊ][a-zA-ZéèêîÏÊ]+([-\s_][a-zA-ZéèêîÏÊ][a-zA-ZéèêîÏÊ])?" maxlength="20">      <span id="email_manquant"></span><br>
+    
+                    <legend> Commentaire : </legend>
+                    <textarea  cols="35" rows="8" required="required"  maxlength="10000"></textarea>
+                </fieldset>
+                <input type="submit" value="Envoyer" onclick="f_validation() " class="bouton2">
+            </form>
+        </div>
+    </div>
     <!-- pied de page-->
     <footer>
-        <pre class="texte">
+        <p class="texte">
             Copywrite &copy; - Mame Aicha Fall - 2022-2023 - ALHAMDOULILAH
-        </pre>
+        </p>
     </footer>
-    <!-- <script >
-        var blocs=document.getElementsByClassName('division');
-        blocs.style.backgroundColor=  rgb(133, 98, 4);;
-    </script> -->
-
 </body>
 
 </html>
+
+        <!-- <div class="div_table">
+            <table>
+                <caption> Vous Avez renseigné : </caption>
+                <thead>
+                    <tr>
+                        <th> Prénom</th>
+                        <th> Nom</th>
+                        <th> Téléphone</th>
+                        <th> Email</th>
+                        <th> Commentaire</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="prenom_T"> </td>
+                        <td id="nom_T"> </td>
+                        <td id="tel_T"></td>
+                        <td id="email_T"> </td>
+                        <td id="commentaire_T"> </td>
+                    </tr>
+                </tbody>
+               
+            </table>
+           
+        </div>
+    
+    </div>
+   
+ -->
+    <!-- <script>
+        var validation = document.getElementById('bouton_envoie');
+        var prenom = document.getElementById('prenom');
+        var prenom_m = document.getElementById('prenom_manquant');
+        validation.addEventListener('click', f_valid);
+
+        function f_valid(e) {
+            if (prenom.validity.valueMissing) {
+                e.preventDefault();
+                prenom_m.textContent = 'P';
+                prenom_m.style.color = 'black';
+            }
+        }
+    </script> -->
+
+    <!-- // function f_validation(){
+        //     document.getElementById("prenom_T") =  document.getElementById("prenom");  
+        //     alert(document.getElementById("prenom_T").innerHTML);      
+        // } -->
